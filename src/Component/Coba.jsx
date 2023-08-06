@@ -1,42 +1,40 @@
-
-
-
+import './tailwind.css';
 import { useState } from 'react';
-// import './tailwind.css';
 
 const Coba = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isSubDropdownOpen, setIsSubDropdownOpen] = useState(false);
-  const [isSubDropdownOpens, setIsSubDropdownOpens] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const [isAtmBcaOpen, setIsAtmBcaOpen] = useState(false);
+    const [isKlikBcaOpen, setIsKlikBcaOpen] = useState(false);
+    const [isMBCAOpen, setIsMBCAOpen] = useState(false);
+  
+    const handleDropdownToggle = () => {
+      setIsOpen(!isOpen);
+      setIsAtmBcaOpen(false);
+      setIsKlikBcaOpen(false);
+      setIsMBCAOpen(false);
+    };
+  
+    const handleAtmBcaToggle = () => {
+      setIsAtmBcaOpen(!isAtmBcaOpen);
+      setIsKlikBcaOpen(false);
+      setIsMBCAOpen(false);
+    };
+  
+    const handleKlikBcaToggle = () => {
+      setIsKlikBcaOpen(!isKlikBcaOpen);
+      setIsAtmBcaOpen(false);
+      setIsMBCAOpen(false);
+    };
+  
+    const handleMBCAToggle = () => {
+      setIsMBCAOpen(!isMBCAOpen);
+      setIsAtmBcaOpen(false);
+      setIsKlikBcaOpen(false);
+    };
+  
+    return (
 
-  const handleDropdownToggle = () => {
-    setIsOpen(!isOpen);
-    setIsSubDropdownOpen(false); // Tutup dropdown "ATM BCA" ketika dropdown utama dibuka
-    setIsSubDropdownOpens(false); // Tutup dropdown "Klik BCA" dan "m-BCA" ketika dropdown utama dibuka
-  };
-
-  const handleSubDropdownToggle = () => {
-    setIsSubDropdownOpen(!isSubDropdownOpen);
-    // setIsOpen(!isOpen);
-    // setIsSubDropdownOpen(false); 
-    setIsSubDropdownOpens(false); // Tutup dropdown "Klik BCA" ketika dropdown "ATM BCA" dibuka
-  };
-
-  const handleSubDropdownToggles = () => {
-    setIsSubDropdownOpen(false); // Tutup dropdown "ATM BCA" ketika dropdown "Klik BCA" dibuka
-    setIsSubDropdownOpens(!isSubDropdownOpens);
-  };
-
-  const handleSubDropdownTogglese = () => {
-   // Tutup dropdown "ATM BCA" ketika dropdown "m-BCA" dibuka
-    setIsSubDropdownOpen(!isSubDropdownOpens);
-    setIsSubDropdownOpens(); (false)
-  };
-
-  return ( 
-  <>
-   <div>
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center">
       <div className="bg-blue-600 w-[332px] h-[462px] mt-10 rounded-lg">
         <div className="bg-blue-500 w-[332px] h-24">
           <h1 className="text-black font-semibold ml-8 pt-5 text-xl">Nusa Lms</h1>
@@ -74,90 +72,74 @@ const Coba = () => {
             </div>
           </div>
           {isOpen && (
-            // <>
-              <div className="h-full overflow-y-scroll ">
+            <>
+              <div className="h-full overflow-y-scroll overflow-custom">
                 <div className="border-b border-gray-300 pb-1"></div>
                 <div className="flex justify-between">
                   <h1 className="font-bold pl-3 text-xs pt-2">ATM BCA</h1>
                   <div className="pr-4">
-                    <button onClick={handleSubDropdownToggle}>
+                    <button onClick={handleAtmBcaToggle}>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor"
-                        className={`w-6 h-6 pt-2 ${isSubDropdownOpen ? 'rotate-180' : ''}`}>
+                        className={`w-6 h-6 pt-2 ${isAtmBcaOpen ? 'rotate-180' : ''}`}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                       </svg>
                     </button>
                   </div>
                 </div>
-                {isSubDropdownOpen && (
+                {isAtmBcaOpen && (
                   <div className="ml-4">
+                    <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
+                    <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
+                    <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
+                    <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
+                    <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
                     <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
                   </div>
                 )}
 
-                {/* <div className="border-b border-gray-300 pb-1"></div>
+                <div className="border-b border-gray-300 pb-1"></div>
                 <div className="flex justify-between">
                   <h1 className="font-bold pl-3 text-xs pt-2">Klik BCA</h1>
                   <div className="pr-4">
-                    <button onClick={handleSubDropdownToggles}>
+                  <button onClick={handleKlikBcaToggle}>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor"
-                        className={`w-6 h-6 pt-2 ${isSubDropdownOpens ? 'rotate-180' : ''}`}>
+                        className={`w-6 h-6 pt-2 ${isKlikBcaOpen ? 'rotate-180' : ''}`}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                       </svg>
                     </button>
                   </div>
                 </div>
-                {isSubDropdownOpens && (
+                {isKlikBcaOpen  && (
                   <div className="ml-4">
                     <p className="text-xs font-medium w-64">1. Select</p>
                   </div>
-                )} */}
-
-<div className="h-full overflow-y-scroll ">
-                <div className="border-b border-gray-300 pb-1"></div>
-                <div className="flex justify-between">
-                  <h1 className="font-bold pl-3 text-xs pt-2">klik BCA</h1>
-                  <div className="pr-4">
-                    <button onClick={ handleSubDropdownTogglese}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                        stroke="currentColor"
-                        className={`w-6 h-6 pt-2 ${isSubDropdownOpen ? 'rotate-180' : ''}`}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                {isSubDropdownOpen && (
-                  <div className="ml-4">
-                    <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
-                  </div>
                 )}
-
-                
 
                 <div className="border-b border-gray-300 pb-1"></div>
                 <div className="flex justify-between">
                   <h1 className="font-bold pl-3 text-xs pt-2">m-BCA</h1>
                   <div className="pr-4">
-                    {/* <button onClick={handleSubDropdownTogglese}> */}
-                    <button onClick={handleSubDropdownToggles}>
+                  <button onClick={handleMBCAToggle}>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor"
-                        className={`w-6 h-6 pt-2 ${isSubDropdownOpens ? 'rotate-180' : ''}`}>
+                       
+                              className={`w-6 h-6 pt-2 ${isMBCAOpen ? 'rotate-180' : ''}`}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                       </svg>
                     </button>
                   </div>
                 </div>
-                {isSubDropdownOpens && (
+                {isMBCAOpen && (
                   <div className="ml-4">
                     <p className="text-xs font-medium w-64">1. m-BCA</p>
                   </div>
                 )}
 
               </div>
-            
+            </>
+          )}
           <div className="border-b border-gray-300 pb-1"></div>
           <div className="flex justify-center items-center mt-3">
             <div className="bg-slate-500 w-[240px] py-1">
@@ -167,10 +149,9 @@ const Coba = () => {
         </div>
       </div>
     </div>
-   </div>
-    </>
   );
 };
 
 export default Coba;
+
 

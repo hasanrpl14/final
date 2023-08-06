@@ -24,7 +24,7 @@ const Transfer = () => {
             <div className="flex justify-between pt-1">
                 <h1 className="font-bold pl-3 text-sm">Credit/Debit Card</h1>
                 {/* Teks di sebelah kiri (pojok kiri) */}
-                <Link to="/bank">
+                <Link to="/credit-card">
                 {/* <h1 className="font-bold pl-3 text-sm">klik</h1> */}
                 <div className="mr-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
@@ -35,12 +35,8 @@ const Transfer = () => {
                 
 
                 </Link>
-             
-       
-                
-                {/* Teks di sebelah kanan (pojok kanan) */}
             </div>
-            <div className="flex row-auto pl-3 border-b border-gray-300 pb-3">
+            <div className="flex row-auto pl-3 border-b border-gray-300 pb-3 text-xs">
               <div className="bg-red-400 w-10 h-10 p-1">
                 <h1>Visa</h1>
               </div>
@@ -52,29 +48,44 @@ const Transfer = () => {
             <div className="flex justify-between pt-1">
                 <h1 className="font-bold pl-3 text-sm">Bank Transfer</h1>
                 {/* Teks di sebelah kiri (pojok kiri) */}
-                <h1 className="pr-4">=</h1>
-                {/* Teks di sebelah kanan (pojok kanan) */}
+                <Link to="/bank">
+                {/* <h1 className="font-bold pl-3 text-sm">klik</h1> */}
+                <div className="mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
+                className="w-6 h-6 text-red-500">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+                </div>
+                </Link>
             </div>
 
-            <div className="flex row-auto pl-3 border-b border-gray-300 pb-3">
-              <div className="bg-red-400 w-10 h-10 p-1">
+            <div className="flex row-auto pl-3 border-b border-gray-300 pb-3 text-xs">
+              <div className="bg-red-400 w-10 h-10 p-1 text-xs">
                 <h1>BCA</h1>
               </div>
-              <div className="bg-red-400 w-10 h-10 p-1 ml-3">
+              <div className="bg-red-400 w-10 h-10 p-1 ml-3 text-xs">
                 <h1>BRI</h1>
               </div>
-              <div className="bg-red-400 w-10 h-10 p-1 ml-3">
-                <h1>MANDIRI</h1>
+              <div className="bg-red-400 w-10 h-10 p-1 ml-3 text-xs">
+                <h1 className="text-xs text-center">MANDIRI</h1>
               </div>
             </div>
 
             <div className="flex justify-between pt-1">
                 <h1 className="font-bold pl-3 text-sm">E-wallets</h1>
                 {/* Teks di sebelah kiri (pojok kiri) */}
-                <h1 className="pr-4">=</h1>
+                <Link to="/E-wallet">
+                {/* <h1 className="font-bold pl-3 text-sm">klik</h1> */}
+                <div className="mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
+                className="w-6 h-6 text-red-500">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+                </div>
+                </Link>
                 {/* Teks di sebelah kanan (pojok kanan) */}
             </div>
-            <div className="flex row-auto pl-3 border-b border-gray-300 pb-3">
+            <div className="flex row-auto pl-3 border-b border-gray-300 pb-3 text-xs">
               <div className="bg-red-400 w-10 h-10 p-1">
                 <h1>Gopay</h1>
               </div>
@@ -84,24 +95,6 @@ const Transfer = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="h-20 overflow-y-scroll">
-        <ul className="p-4">
-          <li className="border-b py-2">Item 1</li>
-          <li className="border-b py-2">Item 2</li>
-          <li className="border-b py-2">Item 3</li>
-          <li className="border-b py-2">Item 4</li>
-          <li className="border-b py-2">Item 1</li>
-          <li className="border-b py-2">Item 2</li>
-          <li className="border-b py-2">Item 3</li>
-          <li className="border-b py-2">Item 4</li>
-          <li className="border-b py-2">Item 1</li>
-          <li className="border-b py-2">Item 2</li>
-          <li className="border-b py-2">Item 3</li>
-          <li className="border-b py-2">Item 4</li>
-          {/* Tambahkan lebih banyak item sesuai kebutuhan */}
-        </ul>
       </div>
     </>
   );

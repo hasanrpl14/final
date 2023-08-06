@@ -2,7 +2,8 @@
 
 /* Define your custom color for the overflow */
 .overflow-custom {
-    scrollbar-color: #your-custom-color #your-scrollbar-background-color;
+    scrollbar-color: 
+     /* #your-custom-color #your-scrollbar-background-color; */
   }
   
   /* Optional: You can also customize the scrollbar width and track color */
@@ -11,10 +12,10 @@
   }
   
   .overflow-custom::-webkit-scrollbar-thumb {
-    background-color: #your-custom-color;
+    background-color: red;
   }
   
   .overflow-custom::-webkit-scrollbar-track {
-    background-color: #your-scrollbar-background-color;
+    background-color: white;
   }
   
