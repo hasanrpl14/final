@@ -2,6 +2,7 @@ import SponsorImage from "../assets/Bank.png"
 import danaImage from "../assets/dana.webp"
 import visaImage from "../assets/visa.png"
 import ovoImage from "../assets/ovo.jpg"
+import Footer from "../Component/Footer"
 const Credit = () => {
   return (
     <>
@@ -31,23 +32,52 @@ const Credit = () => {
             </div>
 
 
-            <div className="flex ml-3 mt-5 items-center">
+            <div className="flex ml-3 mt-3 items-center">
                 <h1 className="text-sm">Nomor Kartu</h1>
                 <div className="ml-auto mr-3 flex items-center">
-                <img src={SponsorImage} alt="" className="h-4" />
-                <img src={danaImage} alt="" className="h-4" />
-                <img src={visaImage} alt="" className="h-4" />
-                <img src={ovoImage} alt="" className="h-4" />
+                <img src={SponsorImage} alt="" className="h-3" />
+                <img src={danaImage} alt="" className="h-3" />
+                <img src={visaImage} alt="" className="h-3" />
+                <img src={ovoImage} alt="" className="h-3" />
                 </div>
             </div>
 
             <div className="flex  mt-5 items-center justify-center">
-              <input type="number" className="w-full" />
+              <input type="number" className="w-4/5 p-[3px] focus:outline-none " />
           </div>
-          
+
+          <div className="flex justify-between items-center ">
+          <div className="text-sm ml-3">
+            <h1 className="pt-2 ml-5">Masa Berlaku</h1>
+            <input type="date" className="w-4/5 ml-5 mt-1 p-[3px] focus:outline-none " />
+          </div>
+
+          <div className="text-sm ml-3">
+            <h1 className="pt-2 ml-2">CVV</h1>
+            <input type="password" className="w-3/4 ml-2 mt-1 p-[3px] focus:outline-none " />
+          </div>
+          </div>
+
+          <div className="mt-4 flex items-center justify-center">
+                <img src={SponsorImage} alt="" className="h-3" />
+                <img src={danaImage} alt="" className="h-3" />
+                <img src={visaImage} alt="" className="h-3" />
+                <img src={ovoImage} alt="" className="h-3" />
+          </div>
+          <h1 className="pt-1 text-center text-xs">Secured Payment by midtrans</h1>
+
+          <div className="mt-10 flex justify-center items-center">
+            <div className="bg-slate-500 w-[240px] py-1">
+              <p className="font-bold text-sm text-center">Bayar Sekarang</p>
+            </div>
+          </div>
+
           </div>
         </div>
       </div>
+
+      <br /><br />
+      <Footer />
 
     </>
   );

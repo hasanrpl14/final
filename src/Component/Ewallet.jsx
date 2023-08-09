@@ -1,6 +1,7 @@
 import './tailwind.css';
 import { useState } from 'react';
 import barcodeImage from "../assets/barcode/barcode.jpg"
+import Footer from "../Component/Footer"
 
 const Ewallet = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +17,12 @@ const Ewallet = () => {
   };
   return (
     <>
+    {/* <div className="overflow-y-scroll overflow-custom"> */}
       <div className="flex justify-center items-center">
         <div className="bg-blue-600 w-[332px] h-[462px] mt-10 rounded-lg">
           <div className="bg-blue-500 w-[332px] h-24">
+          {/* <div className="overflow-y-scroll overflow-custom h-[calc(100% - 72px)]"> */}
+          
             <h1 className="text-black font-semibold ml-8 pt-5 text-xl">Nusa Lms</h1>
             <div className="flex justify-center items-center mt-[14px]">
               <div className="bg-orange-400 w-[250px] h-[73px] rounded-lg">
@@ -31,16 +35,17 @@ const Ewallet = () => {
               </div>
             </div>
 
-            <h1 className=" pl-3 text-sm font-semibold">
+            <h1 className=" pl-3 text-sm font-semibold ">
                 Gopay
             </h1>
             <div className="flex justify-center items-center">
-                <img className="w-[150px] h-[150px]" src={barcodeImage } alt="" />
+                <img className="w-[160px] h-[160px]" src={barcodeImage } alt="" />
             </div>
 
-            <div className="border-b border-gray-300 pb-1"></div>
+            <div className="border-b border-gray-300 pb-1 mt-2"></div>
           <div className="flex justify-between">
-            <h1 className="font-bold pl-3 text-xs pt-2">How to Play</h1>
+            <h1 className="font-bold pl-3 text-xs pt-2 ">How to Play</h1>
+            <div className="border-b border-gray-300 pb-1 mt-2"></div>
             <div className="pr-4">
               <button onClick={handleDropdownToggle}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
@@ -66,7 +71,7 @@ const Ewallet = () => {
               </div>
             </div>
             {isEwallOpen && (
-              <div className="ml-4">
+              <div className="ml-4 h-2">
                 <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
                 <p className="text-xs font-medium w-64">2. Select other transaction on the main menu</p>
                 <p className="text-xs font-medium w-64">1. Select other transaction on the main menu</p>
@@ -78,19 +83,26 @@ const Ewallet = () => {
           </div>
         </>
       )}
-          <div className="flex justify-center items-center">
+          <div className="relative flex mt-2 justify-center items-center">
             <div className="bg-slate-500 w-[240px] py-1">
               <p className="font-bold text-sm text-center">Back to Merchant</p>
             </div>
           </div>
            
+
           </div>
         </div>
       </div>
+    {/* </div> */}
+
+      <br /><br />
+      <Footer />
+  
     </>
   );
 };
 
 export default Ewallet;
+
 
 

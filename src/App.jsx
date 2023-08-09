@@ -3,6 +3,7 @@ import Ban from "./pages/Ban";
 import Data from "./pages/Data";
 import Ewall from "./pages/Ewall";
 import Cred from "./pages/Cred";
+import Co from "./pages/Co";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/bank" element={<Ban />} />
         <Route path="/E-wallet" element={<Ewall />} />
         <Route path="/credit-card" element={<Cred />} />
+        <Route path="/co" element={<Co />} />
         </Routes>
     </BrowserRouter>
     </>
