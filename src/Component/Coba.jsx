@@ -170,13 +170,22 @@ const Coba = () => {
   //   </div>
   // </div>
 
-  <div className="h-screen  items-center justify-center">
-  <div className="w-96 p-4 border border-gray-300">
+  // <div className="h-screen  items-center justify-center">
+  // <div className="w-96 p-4 border border-gray-300">
+  <>
     <div
-      className="h-20 overflow-y-scroll overflow-custom border border-gray-300"
+      className="h-10 max-h-10 overflow-y-scroll overflow-custom border border-gray-300"
       // style={{ direction: 'rtl' }}
     >
-      <p className="">
+      <p className="whitespace-pre-line">
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
       loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
       loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
       loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
@@ -187,8 +196,32 @@ const Coba = () => {
       loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
       </p>
     </div>
-  </div>
+
+
+<div className="max-h-20 overflow-y-scroll border border-gray-300 scrollbar-thin">
+  <p className="whitespace-pre-line">
+    {/* Konten Anda di sini */}
+    loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+      loremvvwjkhjkaehjsdhjkqhkjqdhjkHDKHADJXKHDXJKAHDjJKHJAJJHAJKWHSJK
+  </p>
 </div>
+</>
+
+//   </div>
+// </div>
 
   );
 };
